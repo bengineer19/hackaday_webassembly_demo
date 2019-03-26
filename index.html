@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Wasm demo</title>
+</head>
+
+<body>
+    <p>
+        The result of the computation is: <span id="answer"></span>
+    </p>
+    
+    <script src="graphics.js"></script>
+    <script>
+        Module.onRuntimeInitialized = _ => {
+            const compute = Module.cwrap('compute', 'compute', ['a', 'b']);
+            document.getElementById("answer").innerHTML = compute(12, 17);
+        };
+    </script>
+
+</body>
+</html>
