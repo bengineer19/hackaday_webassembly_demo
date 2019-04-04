@@ -1,5 +1,6 @@
 # hackaday_webassembly_demo
-Super super simple WebAssembly demo for Hackaday introduction article
+Super super simple WebAssembly demo for Hackaday introduction article.
+https://hackaday.com/2019/04/04/webassembly-what-is-it-and-why-should-you-care/ 
 
 Compile using Emscripten:
 ```bash
